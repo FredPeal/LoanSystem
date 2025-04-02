@@ -36,15 +36,6 @@ final class ContactsTypes extends AbstractMigration
         ]);
         
         $table->create();
-        
-        // Datos iniciales
-        $this->execute("
-            INSERT INTO contacts_types (name) VALUES 
-            ('Email'),
-            ('Teléfono'),
-            ('Celular'),
-            ('LinkedIn'),
-            ('Otro');
-        ");
+    
     }
 }
